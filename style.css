@@ -241,3 +241,7 @@ header .container { justify-content: space-between;    }
 #brands .container-block{     display: grid; grid-template-columns: repeat(8, 1fr);  align-items: center;}
 #brands .br{   height: 100px;      width: auto;   display: flex; align-items: center;     justify-content: space-evenly;}
 #brands img{   max-height: 50px;   }
+
+/* Go To Top */
+#got a{     position: fixed; bottom: 2rem;     right: 2rem;   background-color: #06a3da;    height: 40px;  width: 40px;   border-radius: 2px; }
+#got a::after{ content: "\f077";       margin: auto;   position: absolute; top: 50%; left: 50%;     transform: translate(-50%, -50%);    }
