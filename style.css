@@ -1,5 +1,5 @@
-*{   box-sizing: border-box;  font-size: 14px;    color: #fff;   font-family: varela round;    transition: 0.15s;  }
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rubik&display=swap');
+*{   box-sizing: border-box;  font-size: 14px;    color: #fff;   font-family: 'Nunito', sans-serif;    transition: 0.15s;  }
 html{     scroll-behavior: smooth; }
 body{     padding: 0;    margin: 0;     background: #fff}
 a{   text-decoration: none;   }
@@ -15,7 +15,7 @@ h2{  color: #091d3a;     font-size: 40px;    text-transform: capitalize;   margi
 h3{  color: #06a3da;     font-size: 22px;    font-weight: 700;  margin: 0;      text-transform: uppercase;    }
 h4{  color: #091d3a;     font-size: 24px;    margin: 15px 0 0;   text-transform: capitalize;}
 
-.counter{ width: 33.33%; padding: 40px 0;    text-align: center; background-color: #06a3da;    text-transform: capitalize;   }
+.counter{ width: 33.33%; padding: 40px 0;    text-align: center; background-color: #06a3da;    text-transform: capitalize;   font-weight: 600;   }
 .counter> div{    display: inline-block;    vertical-align: middle;   }
 .counter div:nth-child(2) span{    display: block;     text-align: left;   font-size: 20px;    }
 .counter div:nth-child(2) span:nth-child(2){     font-size:40px; }
@@ -92,7 +92,7 @@ header .container { justify-content: space-between;    }
 #com-info .container{    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);   }
 #com-info .white-bg{     background-color: #fff;  }
 #com-info .white-bg div:nth-child(2) span{   color: #06a3da;     }
-#com-info .white-bg div:nth-child(2) span:nth-child(2){     color: #091d3e; font-weight: 900;  }
+#com-info .white-bg div:nth-child(2) span:nth-child(2){     color: #091d3e;     }
 #com-info .counter:not(.counter:nth-child(2)) .icon{   background-color: #fff;    }
 #com-info .counter .icon::after{ content: "";   font-family: fontawesome;     position: absolute; font-size: 20px;    color: #06a3da;     top: 50%;   left: 50%;  transform: translate(-50%, -50%);   display: inline-block;     }
 #com-info .counter:nth-child(1) .icon::after{     content: "\f0c0";   height: 25px;    width: 25px;}
@@ -240,4 +240,4 @@ header .container { justify-content: space-between;    }
 /* Brands */
 #brands .container-block{     display: grid; grid-template-columns: repeat(8, 1fr);  align-items: center;}
 #brands .br{   height: 100px;      width: auto;   display: flex; align-items: center;     justify-content: space-evenly;}
-#brands img{   max-height: 100%;  max-width: auto;   object-fit: contain;  }
+#brands img{   max-height: 50px;   }
