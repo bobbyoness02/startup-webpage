@@ -8,6 +8,7 @@ p{   color: #555;     line-height: 25px;  margin: 5px 0 0;}
 .max-width{    width: 100%;   max-width: 1830px;  margin: auto;  }
 .uni-max-width{     width: 100%;   max-width: 1300px;  margin: auto;  }
 .container, .flex-right{    display: flex; align-items: center;     }
+.flex-right{   padding-top: 50px;   }
 .container-block{   display: block;     margin: auto;  text-align: center; }
 
 h2{  color: #091d3a;     font-size: 40px;    text-transform: capitalize;   margin: 15px 0 0;     letter-spacing: 1px;   line-height: initial;  ;}
@@ -20,7 +21,7 @@ h4{  color: #091d3a;     font-size: 24px;    margin: 15px 0 0;   text-transform:
 .counter div:nth-child(2) span:nth-child(2){     font-size:40px; }
 .icon {   height: 65px; width: 65px; background-color: #06a3da;    margin-right: 25px;    border-radius: 3px;    position: relative; display: inline-block;   }
 
-.btn{     background: #06a3da;     padding: 20px 30px;     border-radius: 2px; display: inline-block;   margin: 5px 0 0;    text-transform: capitalize;}
+.btn{     background: #06a3da;     padding: 20px 30px;     border-radius: 2px; display: inline-block;   margin: 5px 0 0;    text-transform: capitalize;    cursor: pointer;    }
 .btn a{   font-size: 18px;    }
 
 .br-line{ position: relative; display: block;     height: 5px;   width: 180px;  background-color: #06a3da;    border-radius: 3px; margin: 15px 0 0;   }
@@ -73,6 +74,7 @@ header .container { justify-content: space-between;    }
      .header-bottom .right li:nth-child(4)::after, .header-bottom .right li:nth-child(5)::after{     content: "\f0d7";   font-family: fontawesome;     margin-left: 5px;   }
      .header-bottom .right li:hover:nth-child(4)::after, .header-bottom .right li:hover:nth-child(5)::after{  color: #06a3da;     }
      .header-bottom .right li:nth-child(7)::after{     content: "\f002";   font-family: fontawesome;     font-size: 16px;    color: #06a3da;     }
+     .header-bottom .right li:hover:nth-child(7)::after{    color: #fff;   }
      .header-bottom .right li:last-child{    background-color: #06a3da;    padding: 10px 15px; border-radius: 3px; }
 
 /* Hero Banner */
@@ -132,7 +134,7 @@ header .container { justify-content: space-between;    }
 #services .right{   display: grid; grid-template-columns: auto auto auto;  padding: 60px 0;    gap: 50px;     }
 #services .gridbox{ background-color: #eef9ff;    border-radius: 3px; width: auto;   padding: 40px 40px 60px; }
 #services .gridbox:hover .icon{    rotate: -135deg;     }
-#services .gridbox:hover .icon::after{  rotate: 135deg; top: 40%;  left: -5%;    transition: 0s;     }
+#services .gridbox:hover .icon::after{  rotate: 135deg; top: 41%;  left: -4%;    transition: 0s;     }
 #services .gridbox .icon::after{    content: ""; font-family: fontawesome;     font-size: 18px;    display: inline-block;   height: 18px;  width: 18px;   position: absolute; top: 50%; width: 50%;    transform: translate(-50%, -50%);  }
 #services .gridbox:nth-child(1) .icon::after{     content: url(Media/shield-halved-solid.svg); }
 #services .gridbox:nth-child(2) .icon::after{     content: "\f200"; }
@@ -191,3 +193,20 @@ header .container { justify-content: space-between;    }
 #req-quote #message{     height: 90px;  padding: 5px 15px 50px; color: #555;}
 #req-quote input:focus ::placeholder{  opacity: 0;    }
 #req-quote .right button{     background-color: #091d3e;}
+
+/* Testimonial */
+#tstmonl .left-width{    width: 45%;}
+#tstmonl .br-line{  margin: 10px auto 0;   }
+#tstmonl .br-line::before{    left: 40px;    }
+#tstmonl .comment{  width: 33.3333%;    background-color: #eef9ff;    }
+#tstmonl .comment > div{   padding: 25px 50px; }
+#tstmonl .comment .head{ height: fit-content;     text-align: left;   border-bottom: 1px solid #99999955;}
+#tstmonl .comment .head>*{ display: inline-block;   vertical-align: middle;     }
+#tstmonl .comment .head div{  padding-left:  30px;     }
+#tstmonl .comment .head div span{  display: block;     }
+#tstmonl .comment .head div span:first-child{     color: #06a3da;     text-transform: capitalize;   font-size: 24px;    font-weight: 800;   }
+#tstmonl .comment .head div span:last-child{     color: #091d3a;     text-transform: uppercase;    font-weight: 800;   margin: 10px 0 0;}
+#tstmonl .comment .body p{    text-align: left;   font-size: 16px;    }
+#tstmonl .sliderdots{    margin: 50px 0 0;}
+#tstmonl .sliderdots span{    height: 15px; width: 15px;    background-color: lightblue;  display: inline-block;   margin: 0 5px;    border-radius: 2px;   }
+#tstmonl .sliderdots span:first-child{  width: 25px;    background-color: #06a3da;   }
