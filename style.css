@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rubik&display=swap');
 *{   box-sizing: border-box;  font-size: 14px;    color: #fff;   font-family: 'Nunito', sans-serif;    transition: 0.15s;  }
+p,a,span,li{   font-family: 'Rubik';}
 html{     scroll-behavior: smooth; }
 body{     padding: 0;    margin: 0;     background: #fff}
 a{   text-decoration: none;   }
@@ -11,7 +12,7 @@ p{   color: #555;     line-height: 25px;  margin: 5px 0 0;}
 .padding-top{   padding-top: 50px;   }
 .container-block{   display: block;     margin: auto;  text-align: center; }
 
-h2{  color: #091d3a;     font-size: 40px;    text-transform: capitalize;   margin: 15px 0 0;     letter-spacing: 1px;   line-height: initial;  ;}
+h2{  color: #091d3a;     font-size: 40px;    text-transform: capitalize;   margin: 15px 0 0;     letter-spacing: 1px;   line-height: initial;  font-weight: 800;}
 h3{  color: #06a3da;     font-size: 22px;    font-weight: 700;  margin: 0;      text-transform: uppercase;    }
 h4{  color: #091d3a;     font-size: 24px;    margin: 15px 0 0;   text-transform: capitalize;}
 
@@ -33,12 +34,14 @@ h4{  color: #091d3a;     font-size: 24px;    margin: 15px 0 0;   text-transform:
 
 .left-width{    width: 50%;   margin: auto;  }
 
-.main-padding{ padding: 100px 0;   }
+.main-padding{ padding: 80px 0;   }
 
 .odd{     background-color: #fff !important;  position: relative;     z-index: 2;    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);     }
 
 ::placeholder{ color: #555;   }
 li::before, li::after, a::after, a::before{  content: "";   font-family: fontawesome;     font-size: 18px;    }
+
+input:invalid{ border: red;}
 
 
 /* Header */
@@ -82,7 +85,7 @@ header .container { justify-content: space-between;    }
 #hero-bnr .max-width::after{   content: "";   height: 100%;  width: 100%;   background-color: rgba(9,29,62,0.7);   position: absolute;  top: 0;   right: 0;      z-index: 0;}
 #hero-bnr .container{    justify-content: center; position: relative; z-index: 1;    }
 #hero-bnr .viewport{     text-align: center;      width: 900px;  text-transform: capitalize;      }
-#hero-bnr p{   margin: 0;     font-size: 22px;    text-transform: uppercase;    color: #fff;   font-weight: 600;   }
+#hero-bnr p{   margin: 0;     font-size: 22px;    text-transform: uppercase;    color: #fff;   }
 #hero-bnr h1{  margin: 0;     font-size: 70px;      margin-top: 10px;   }
 #hero-bnr .button{  display: inline-block;   border: 2px solid #fff;  padding: 10px 20px;      margin: 20px 10px;  font-size: 18px;    cursor: pointer;}
 #hero-bnr .free-q{  border-color: #06a3da;     background-color: #06a3da;  }
@@ -186,12 +189,12 @@ header .container { justify-content: space-between;    }
 #req-quote .left .counter div:last-child span:last-child{     color: #06a3da;     font-size: 28px;    margin-top: 5px;    font-weight: 800; }
 
 #req-quote .right{  width: 38%;    background-color: #06a3da;    padding: 50px 40px; }
-#req-quote .right input, #req-quote .right select, #req-quote .right button{ width: 100%;   border: none;  outline: none; border-radius: 2px; padding: 20px 15px; background-color: #eef9ff;    }
+#req-quote .right input, #req-quote .right select, #req-quote .right button{ width: 100%;   border: none;  outline: none; border-radius: 2px; padding: 20px 15px; background-color: #eef9ff;   color: #555; }
 #req-quote .right input:not(input:first-child), #req-quote .right select, #req-quote .right button{    margin-top: 15px;   ;}
 #req-quote #sel-quote, #req-quote option{  color: #555;   }
 #req-quote #message{     height: 90px;  padding: 5px 15px 50px; color: #555;}
 #req-quote input:focus ::placeholder{  opacity: 0;    }
-#req-quote .right button{     background-color: #091d3e;}
+#req-quote .right button{     background-color: #091d3e; color: #fff; font: 16px;    }
 
 /* Testimonial */
 #tstmonl .left-width{    width: 45%;}
@@ -241,6 +244,43 @@ header .container { justify-content: space-between;    }
 #brands .container-block{     display: grid; grid-template-columns: repeat(8, 1fr);  align-items: center;}
 #brands .br{   height: 100px;      width: auto;   display: flex; align-items: center;     justify-content: space-evenly;}
 #brands img{   max-height: 50px;   }
+
+/* Footer */
+footer{   background-color: #091d3e;    overflow: hidden;}
+footer .container{  position: relative; justify-content: flex-end;    }
+footer .left{  width: 30%;       position: absolute; top: 0;   left: 0;    background-color: #06a3da;    z-index: 5;    text-align: center; height: 120%;  padding: 5em 35px 0; }
+footer .left > {   display: inline-block;   vertical-align: middle;}
+footer .left img{   height: 50px; }
+footer .left p{     font-size: 15px;    color: #fff;   margin: 15px 0 0;    }
+footer form{   display: grid; grid-template-columns: 70% 30%;    margin-top: 30px;   }
+footer form input[type=email], footer form input[type=submit]{         width: 100%;     border: none;  outline: none;   border-radius: 2px;    padding: 20px 15px;     background-color: #eef9ff;    color: #555; display: inline-block;}
+footer form input[type=email]::placeholder{  font-size: 16px;    ;}
+footer form input[type=submit]{    background-color: #091d3a;    color: #fff;   font-size: 16px;    }
+
+footer .right{ width: 70%;    display: grid; grid-template-columns: 350px 250px 250px;   justify-content: space-between; }
+footer .right .links{    padding: 50px 40px; }
+footer .right .links:first-child{  display: inline-block;   width: auto;}
+footer .right .links h3{ color: #fff;   font-size: 26px;    text-transform: capitalize;   }
+footer .right .links .br-line{     width: 100px;  height: 3px;   margin: 5px 0 0;    }
+footer .right .links .br-line::before{  height: 3px;   left: 85px;    width: 6px;    }
+footer .links > ul{ margin: 20px 0 0;   }
+footer .links > ul li{   margin: 10px 0;     }
+footer .links > ul li a{ font-size: 16px;    }
+footer .links >ul > li::before{    content: "\f061";   font-family: fontawesome;     font-size: 18px;    color: #06a3da;     margin-right: 8px;  }
+footer .links > ul > li:hover{     letter-spacing: 1.5px;  transform: scale(1.05); transition: .5s;     } 
+
+footer .links .sm-links li{   display: inline-block;   height: max-content;  width: max-content;   position: relative;  }
+footer .links .sm-links li a{    height: 40px;  width: 40px;   border-radius: 2px; background-color: #06a3da; display: inline-block;}
+footer .links .sm-links li:not(li:first-child){   margin-left: 5px;  }
+footer .links .sm-links li a::after{ content: "";    font-family: fontawesome;     font-size: 18px; position: absolute; top: 50%; left: 50%;     transform: translate(-50%, -50%);  }
+footer .links .sm-links li:first-child a::after{ content: "\f099";    }
+footer .links .sm-links li:nth-child(2) a::after{ content: "\f39e";   }
+footer .links .sm-links li:nth-child(3) a::after{ content: "\f0e1";   }
+footer .links .sm-links li:last-child a::after{ content: "\f16d";     }
+footer .links .sm-links li:hover a::after{   filter: drop-shadow(0px 0px 10px #091d3a);     transition: 0.15s;}
+
+footer .copyright{  width: 100%;   background-color: #051429;    font-weight: 500;   padding: 30px 25vw 30px 0;    font-size: 18px;    text-align: right; position: relative;  z-index: 0;    margin-top: -1em;   display: inline-block;   }
+footer .copyright   a{   text-decoration: underline;   font-size: 18px;    }
 
 /* Go To Top */
 #got a{     position: fixed; bottom: 2rem;     right: 2rem;   background-color: #06a3da;    height: 40px;  width: 40px;   border-radius: 2px; }
