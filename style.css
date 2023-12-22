@@ -107,6 +107,7 @@ header .container { justify-content: space-between;    }
 #hero-bnr .max-width::after{   content: "";   height: 100%;  width: 100%;   background-color: rgba(9,29,62,0.7);   position: absolute;  top: 0;   right: 0;      z-index: 0;}
 #hero-bnr .container{    justify-content: center; position: relative; z-index: 1;    }
 #hero-bnr .viewport{     text-align: center;      width: 800px;  text-transform: capitalize;      }
+#hero-bnr .viewport > :last-child:hover{    background-color: #fff; color: #06a3da;  }
 #hero-bnr p{   margin: 0;     font-size: 22px;    text-transform: uppercase;    color: #fff;   }
 #hero-bnr h1{  margin: 0;     font-size: 70px;      margin-top: 10px;   }
 #hero-bnr .button{  display: inline-block;   border: 2px solid #fff;  padding: 10px 20px;      margin: 20px 10px;  font-size: 18px;    cursor: pointer;    border-radius: 3px; }
@@ -389,7 +390,7 @@ footer .copyright   a{   text-decoration: underline;   font-size: 18px;    }
      /* Hero Banner */
      #hero-bnr p{   font-size: 14px;    }
      #hero-bnr h1{  font-size: 30px;    }
-     #hero-bnr .max-width::after{      transform: translate(0, -31%);}
+     #hero-bnr .max-width::after{      transform: translate(0, -29.5%);}
      #hero-bnr .button{  padding: 5px 8px;   font-size: 12px;    margin: 8px 4px;}
 
      /* Company Info */
