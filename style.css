@@ -328,6 +328,7 @@ footer .copyright   a{   text-decoration: underline;   font-size: 18px;    }
      h3{  font-size: 18px;    }
      .br-line{ width: 140px;  height: 4px;   }
      .br-line::before{   left: 120px;   height: 4px;   width: 5px;    }
+     .main-padding{ padding: 80px 0 0;}
 
 
      /* Header */
@@ -383,6 +384,8 @@ footer .copyright   a{   text-decoration: underline;   font-size: 18px;    }
 }
 
 @media screen and (max-width: 669px) {
+     .main-padding{ padding: 50px 0 0;  }
+
      /* Header Top */
      .header-top .container{  display: block;     }
      .header-top .container > div{ margin: 15px 0;     text-align: center; }
@@ -394,5 +397,7 @@ footer .copyright   a{   text-decoration: underline;   font-size: 18px;    }
      #hero-bnr .button{  padding: 5px 8px;   font-size: 12px;    margin: 8px 4px;}
 
      /* Company Info */
-     #com-info{     margin-top: 0 ;    }
+     #com-info{     margin-top: 0 ;    padding: 50px 0 0;  }
+     #com-info .container{     display: block; }
+     #com-info .counter{ width: 100%;   }
 }
