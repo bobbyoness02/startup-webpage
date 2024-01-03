@@ -291,7 +291,7 @@ footer .links > ul{ margin: 20px 0 0;   }
 footer .links > ul li{   margin: 10px 0;     }
 footer .links > ul li a{ font-size: 16px;    }
 footer .links >ul > li::before{    content: "\f061";   font-family: fontawesome;     font-size: 18px;    color: #06a3da;     margin-right: 8px;  }
-footer .links > ul > li:hover{     letter-spacing: 1.5px;  transform: scale(1.05); transition: .5s;     } 
+footer .links > ul > li:hover{     letter-spacing: 1.5px;   transition: .5s;     } 
 
 footer .links .sm-links li{   display: inline-block;   height: max-content;  width: max-content;   position: relative;  }
 footer .links .sm-links li a{    height: 40px;  width: 40px;   border-radius: 2px; background-color: #06a3da; display: inline-block;}
