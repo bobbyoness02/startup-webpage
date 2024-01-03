@@ -11,6 +11,7 @@ p{   color: #555;     line-height: 25px;  margin: 5px 0 0;}
 .container, .padding-top{    display: flex; align-items: center;     }
 .padding-top{   padding-top: 50px;   }
 .container-block{   display: block;     margin: auto;  text-align: center; }
+.container-block #aboutus .container .left{  width: 100%;   }
 
 h2{  color: #091d3a;     font-size: 40px;    text-transform: capitalize;   margin: 15px 0 0;     letter-spacing: 1px;   line-height: initial;  font-weight: 800;}
 h3{  color: #06a3da;     font-size: 22px;    font-weight: 700;  margin: 0;      text-transform: uppercase;    }
@@ -128,6 +129,7 @@ header .container { justify-content: space-between;    }
 /* about us */
 #aboutus{ margin-top: -4%;  }
 #aboutus .container{     align-items: flex-start; }
+#aboutus .container-block{    display: none; }
 #aboutus .container .left{    width: 60%;    }
 #aboutus .container .left>p{  font-size: 16px;    margin: 30px 0 0;   padding-right: 4%;  color: #212121;   }
 #aboutus .left ul{  width: 100%;     }
@@ -327,9 +329,10 @@ footer .copyright   a{   text-decoration: underline;   font-size: 18px;    }
      .icon{    height: 55px;  width: 55px;   }
      h2{  font-size: 30px;    }
      h3{  font-size: 18px;    }
-     .br-line{ width: 140px;  height: 4px;   }
+     .br-line{ width: 140px;  height: 4px;   margin: auto;}
      .br-line::before{   left: 120px;   height: 4px;   width: 5px;    }
      .main-padding{ padding: 80px 0 0;}
+     #aboutus .container-block > div {  width: 100% !important;   }
 
 
      /* Header */
